@@ -47,3 +47,14 @@ function simonAnimation(id){
     $(id).fadeOut(100).fadeIn(100);
 }
 
+//activates animation and audio when user clicks a button
+//checks player pattern against simon's
+$('.simon').click(function(buttonClicked){
+    numClick++;
+    let color = buttonClicked.target.id;
+    simonAnimation('#' + color);
+    playAudio(color);
+    checkPlayer(color);
+});
+
+
