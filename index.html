@@ -8,22 +8,23 @@
       <meta name="keywords" content="online game, javascript game">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="icon" href="data:;base64,iVBORwOKGO=">
-      <title>Game Is ON</title>
+      <title>Simon Says</title>
   </head>
   <body>
  
     <div class="intro">
         <h1>SIMON SAYS</h1>
         <p>How long a sequence can you remember?</p>
-        <p>Computer offers a new note to memorize as level goes up. The previous pattern is not repeated.</p>
+        <p>Computer offers a new note to memorize as level goes up.</p>
         <p>The task is to replicate the previous level pattern and the newly added note.</p>
+        <p>The previous pattern is not repeated when moved to the next level.</p>
         <button class="button disappear">CONTINUE</button> 
     </div>
     
     <div class="instructions">
-      <h2></h2>
-      <button id="begin">START GAME</button> 
-      <p class="level">Level: <span id="level">0</span></p>
+        <div id="heading"></div>
+        <button id="begin">START GAME</button> 
+        <p class="level">Level: <span id="level">0</span></p>
     </div>
 
     <div class="container">
