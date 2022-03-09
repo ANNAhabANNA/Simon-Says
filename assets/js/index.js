@@ -2,8 +2,8 @@
 //makes the intro html disappear on a click of 'CONTINUE' button
 let start = document.querySelector('.disappear');
 start.addEventListener('click', function(){
-  let intro = document.querySelector('.intro');
-  intro.style.top = '100%';
+    let intro = document.querySelector('.intro');
+    intro.style.top = '100%';
 });
 
 //creates a new h2 element for game guidence display 
@@ -18,3 +18,32 @@ begin.addEventListener('click', function(){
     $('#begin').hide();
     setTimeout(nextSequence, 2000);
 });
+
+//variables setup required for game start and reset
+let numClick = -1;
+let playerPattern = [];
+let computerPattern = [];
+let fourColors = ['red', 'blue', 'yellow', 'green'];
+let level = 0;
+
+//plays audio, animation after randomized colors are generated
+function nextSequence(){
+    let randomColors = Math.floor(Math.random()*4);
+    let color = fourColors[randomColors];
+    computerPattern.push(color);
+    playAudio(color);
+    simonAnimation('#' + color);
+}
+
+//associates each of the possible colors with relevant audio file
+function playAudio(color){
+    let audioPath = `assets/audio/${color}.mp3`;
+    let audio = new Audio(audioPath);
+    audio.play()
+}
+
+//creates visual animation for clicked simon buttons
+function simonAnimation(id){
+    $(id).fadeOut(100).fadeIn(100);
+}
+
