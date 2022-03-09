@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="interactive javascript game">
+      <meta name="keywords" content="online game, javascript game">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="icon" href="data:;base64,iVBORwOKGO=">
+      <title>Game Is ON</title>
+  </head>
+  <body>
+ 
+    <div class="initiate">
+        <h1>SIMON SAYS</h1>
+        <p>How long a sequence can you remember?</p>
+        <p>Computer offers a new note to memorize as level goes up. The previous pattern is not repeated.</p>
+        <p>The task is to replicate the previous level pattern and the newly added note.</p>
+        <button class="button disappearing">CLICK HERE</button> 
+    </div>
+    
+    <div class="instructions">
+      <h2></h2>
+      <button id="begin">START GAME</button> 
+      <p class="level">Level: <span id="level">0</span></p>
+    </div>
+
+    <div class="container">
+        <div id="green" class="simon green"></div>
+        <div id="red" class="simon red"></div>
+        <div id="yellow" class="simon yellow"></div>
+        <div id="blue" class="simon blue"></div>
+    </div>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  </body>
+</html>
