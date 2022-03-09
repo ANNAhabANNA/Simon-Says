@@ -26,8 +26,48 @@ let computerPattern = [];
 let fourColors = ['red', 'blue', 'yellow', 'green'];
 let level = 0;
 
+//activates animation and audio when user clicks a button
+//checks player pattern against simon's
+$('.simon').click(function(buttonClicked){
+    numClick++;
+    let color = buttonClicked.target.id;
+    simonAnimation('#' + color);
+    playAudio(color);
+    checkPlayer(color);
+});
+
+//activates user pattern check against computer
+function checkPlayer(color){
+    playerPattern.push(color);
+    if(color == computerPattern[numClick]){
+      if(playerPattern.length == computerPattern.length){
+        setTimeout(function(){
+          playerPattern = [];
+          numClick = -1;
+          nextSequence();
+        }, 2000);
+      }
+    }else{
+      $('h2').text('Wrong! Game Over');
+      document.getElementById('begin').disabled = false;
+      playerPattern = [];
+      computerPattern = [];
+      begin.addEventListener('click', function() {
+        location.reload();
+        }); 
+     
+      $('#begin').show();
+      $('#begin').text('PLAY AGAIN');
+    
+      level = 0;
+      numClick = -1;
+    }
+  }
+
 //plays audio, animation after randomized colors are generated
 function nextSequence(){
+    level++;
+    $('#level').text(level);
     let randomColors = Math.floor(Math.random()*4);
     let color = fourColors[randomColors];
     computerPattern.push(color);
@@ -46,15 +86,3 @@ function playAudio(color){
 function simonAnimation(id){
     $(id).fadeOut(100).fadeIn(100);
 }
-
-//activates animation and audio when user clicks a button
-//checks player pattern against simon's
-$('.simon').click(function(buttonClicked){
-    numClick++;
-    let color = buttonClicked.target.id;
-    simonAnimation('#' + color);
-    playAudio(color);
-    checkPlayer(color);
-});
-
-
