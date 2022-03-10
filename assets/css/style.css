@@ -1,179 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 /* general setup */
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* color range */
 :root {
-  --base: #ECC19C;
-  --forefront: #1E847F;
-  --button:   #4FD1C5;
-  --font: #333;
-  --red: #f25022;
-  --green: #5F9747;
-  --blue:  #3574b2;
-  --yellow: #ffb900;
-  --start: #9cecc1;
-  --border: #5556;
-  --shadow: #555;
+--base: #ECC19C;
+--forefront: #1E847F;
+--button:   #4FD1C5;
+--font: #333;
+--red: #f25022;
+--green: #5F9747;
+--blue:  #3574b2;
+--yellow: #ffb900;
+--start: #9cecc1;
+--border: #5556;
+--shadow: #555;
 }
 
 /* flex setup for responsiveness */
 body {  
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  min-height: 100vh;
-  background-color: var(--base);
-  font-family: 'Goudy Bookletter', sans-serif;
-  font-size: 20px;
-  color: var(--font); 
+display: flex;
+justify-content: center;
+margin: 0;
+min-height: 100vh;
+background-color: var(--base);
+font-family: 'Goudy Bookletter', sans-serif;
+font-size: 20px;
+color: var(--font); 
 }
 
 /* holder for game rules */
 .intro {
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  position: fixed;
-  text-align: center;
-  background-color: var(--forefront);
-  line-height: 40px;
-  padding: 1.5em;
-  line-height: 1.8em;
+width: 100vw;
+height: 100vh;
+z-index: 999;
+position: fixed;
+text-align: center;
+background-color: var(--forefront);
+line-height: 40px;
+padding: 1.5em;
+line-height: 1.8em;
 }
 
 h1 {
-  margin-top: 0.1rem;
-  margin-bottom: 1rem;
+margin-top: 0.1rem;
+margin-bottom: 1rem;
 }
 
 /* responsiveness for small screens */
 @media only screen and (max-width: 500px) {
-  .intro {
-    font-size: smaller;
-  }
-  .container {
-    grid-template-rows: 120px 120px;
-    grid-template-columns: 120px 120px;
-    grid-gap: 10px; 
-  }
+.intro {
+  font-size: smaller;
+}
+.container {
+  grid-template-rows: 120px 120px;
+  grid-template-columns: 120px 120px;
+  grid-gap: 10px; 
+}
 }
 
 /*responsiveness for larger screens */
 @media only screen and (min-width: 500px) {
-  h1 {
-    margin-top: 150px;
-  }
+h1 {
+  margin-top: 150px;
+}
 }
 
 /* game status info */
 .instructions {
-  margin-top: 0.5em;
-  text-align: center;
+margin-top: 0.5em;
+text-align: center;
 }
 
 /* customized continue button design (credit to https://codepen.io/mccombsc/pen/ZEzxWPy) */
 .button {
-  position: relative;
-  margin-top: 1em;
-  min-width: 200px;
-  min-height: 60px;
-  letter-spacing: 1.3px;
-  font-size: 18px;
-  background: var(--button);
-  border: none;
-  border-radius: 1000px;
+position: relative;
+margin-top: 1em;
+min-width: 200px;
+min-height: 60px;
+letter-spacing: 1.3px;
+font-size: 18px;
+background: var(--button);
+border: none;
+border-radius: 1000px;
 }
 
 .button::before {
-  transform: translate(-50%, -50%);
-  opacity: 0; 
+transform: translate(-50%, -50%);
+opacity: 0; 
 }
 
 .button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid var(--button);
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: ring 1.5s infinite;
+content: '';
+width: 30px; height: 30px;
+border-radius: 100%;
+border: 6px solid var(--button);
+position: absolute;
+z-index: -1;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: ring 1.5s infinite;
 }
 
 /* ring effect for continue button */
 @keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }  
+0% {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+100% {
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+}  
 }  
 
 /* start game button design */
 #begin {
-  position: relative;
-  min-width: 130px;
-  min-height: 40px;
-  margin-top: 4em;
-  letter-spacing: 1.3px;
-  font-size: 12px;
-  font-weight: 600;
-  background: var(--start);
-  border: none;
-  border-radius: 1000px;
+position: relative;
+min-width: 130px;
+min-height: 40px;
+margin-top: 4em;
+letter-spacing: 1.3px;
+font-size: 12px;
+font-weight: 600;
+background: var(--start);
+border: none;
+border-radius: 1000px;
 }
 
 /* game level identifier */
 .level {
-  margin-top: 1em;
-  font-weight:bold;
-  font-size: larger;
+margin-top: 1em;
+font-weight:bold;
+font-size: larger;
 }
 
 /* holder for simon buttons */
 .container {
-  display: grid;
-  position: fixed;
-  margin-top: 170px; 
-  grid-template-rows: 160px 160px;
-  grid-template-columns: 160px 160px;
-  grid-gap: 20px; 
+display: grid;
+position: fixed;
+margin-top: 170px; 
+grid-template-rows: 160px 160px;
+grid-template-columns: 160px 160px;
+grid-gap: 20px; 
 }
 
 /* simon buttons design */
 .simon {
-  margin: 25px;
-  border: 2px solid var(--border);
-  box-shadow: 4px 4px var(--shadow);
-  border-radius: 300px;
+margin: 25px;
+border: 2px solid var(--border);
+box-shadow: 4px 4px var(--shadow);
+border-radius: 300px;
 }
 
 .red {
-  background-color: var(--red);
+background-color: var(--red);
 }
 
 .green {
-  background-color:  var(--green);
+background-color:  var(--green);
 }
 
 .blue {
-  background-color: var(--blue);
+background-color: var(--blue);
 }
 
 .yellow {
-  background-color: var(--yellow);
+background-color: var(--yellow);
 }

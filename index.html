@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +7,40 @@
       <meta name="keywords" content="online game, javascript game">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="shortcut icon" href="assets/img/favicon">
+      <!--Faster Google fonts loading-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
       <title>Simon Says</title>
   </head>
-
   <body>
-    <div aria-label="game rules" class="intro">
-        <h1>SIMON SAYS</h1>
-        <p>How long a sequence can you remember?</p>
-        <p>Computer offers a new note to memorize as level goes up.</p>
-        <p>The task is to replicate the previous level pattern and the newly added note.</p>
-        <p>The previous pattern is not repeated when moved to the next level.</p>
-        <button aria-label="press continue" class="button disappear">CONTINUE</button> 
+    <!--Game rules-->
+    <div class="intro">
+      <h1>SIMON SAYS</h1>
+      <p>How long a sequence can you remember?</p>
+      <p>Computer offers a new note to memorize as level goes up.</p>
+      <p>The task is to replicate the previous level pattern and the newly added note.</p>
+      <p>The previous pattern is not repeated when moved to the next level.</p>
+      <!--Continue button-->
+      <button aria-label="press continue" class="button disappear">CONTINUE</button> 
     </div>
-    
-    <div aria-label="game status" class="instructions">
-        <div aria-label=""id="heading"></div>
-        <button aria-label="press to start game" id="begin">START GAME</button> 
-        <p aria-label="level identifier" class="level">Level: <span id="level">0</span></p>
+    <!--Game instructions-->
+    <div class="instructions" aria-labelledby="heading">
+      <!--Manipulation with game instructions text-->
+      <div id="heading"></div>
+      <!--Start game button-->
+      <button id="begin" aria-label="press to start game">START GAME</button> 
+      <!--Level indicator-->
+      <p  class="level">Level: <span id="level">0</span></p>
     </div>
-
-    <div arial-label="four colored circles representing buttons" class="container">
-        <div aria-label="green button" id="green"  class="simon green"></div>
-        <div aria-label="red button"id="red"    class="simon red"></div>
-        <div aria-label="yellow button"id="yellow" class="simon yellow"></div>
-        <div aria-label="blue button"id="blue"   class="simon blue"></div>
+    <!--Colored buttons-->
+    <div class="container">
+      <div id="green"  class="simon green" aria-labelledby="green"></div>
+      <div id="red"    class="simon red" aria-labelledby="red"></div>
+      <div id="yellow" class="simon yellow" aria-labelledby="yellow"></div>
+      <div id="blue" class="simon blue" aria-labelledby="blue"></div>
     </div>
-    
+  <!--jQuery link-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/index.js"></script>
   </body>
