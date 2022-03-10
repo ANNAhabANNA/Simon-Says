@@ -1,23 +1,20 @@
-
+![ami.responsivedesign.is](assets/readme-img/am-i-responsive.jpeg)
 <br />
 <div align="center">
-  
-
   <h3 align="center">SIMON SAYS</h3>
-
   <p align="center">
     Interactive Javascript Game 
-    <br />
-      <a href="https://github.com/ANNAhabANNA/Simon-Says">View Demo</a>
-    <br />
+  <br />
+    <a href="https://github.com/ANNAhabANNA/Simon-Says">View Demo</a>
+  <br />
   </p>
 </div>
 
 ## About The Project
 
+The project idea was inspired by childhood memory game Simon Says. Simon was released by Milton-Bradley in 1978 with much fanfare, including a midnight release party at Studio 54, the elite disco in New York City. An instance success, the game reached its peak during the 1980s and continued to sell for decades thereafter.[http://web.pdx.edu/~kherb2/project2-simon-game/#:~:text=Simon%20was%20released%20by%20Milton,to%20sell%20for%20decades%20thereafter.](https://example.com)
 
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The aim of the game is to repeat a series of random computer clicks. After each round, the sequence becomes longer by one click which makes it harder to remember. 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others

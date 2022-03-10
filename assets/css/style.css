@@ -53,6 +53,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
+/* responsiveness for small screens */
 @media only screen and (max-width: 500px) {
   .intro {
     font-size: smaller;
@@ -64,6 +65,7 @@ h1 {
   }
 }
 
+/*responsiveness for larger screens */
 @media only screen and (min-width: 500px) {
   h1 {
     margin-top: 150px;

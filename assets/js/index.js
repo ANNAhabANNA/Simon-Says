@@ -16,6 +16,8 @@ let begin = document.querySelector('#begin');
 begin.addEventListener('click', function(){
   //changes game guidance text and makes start game button invisible
   $('h2').text('Repeat After Simon!');
+  //accessibility
+  document.querySelector('h2[aria-label="repeat after simon"]');
   $('#begin').hide();
   //pauses before moving to next level sequence
   setTimeout(nextSequence, 2000);
@@ -25,7 +27,7 @@ begin.addEventListener('click', function(){
 let numClick = -1;
 let playerPattern = [];
 let computerPattern = [];
-let fourColors = ['red', 'blue', 'yellow', 'green'];
+let fourColors = ['red', 'green', 'yellow', 'blue'];
 let level = 0;
 
 //activates animation and audio when user clicks a button
@@ -40,6 +42,7 @@ $('.simon').click(function(buttonClicked){
   checkPlayer(color);
 });
 
+//the code from  https://www.youtube.com/watch?v=FEL8gKaIm1Y was used and customized according to the project needs
 //activates user pattern check against computer's pattern
 function checkPlayer(color){
   //user click added to playerPattern array
@@ -56,7 +59,9 @@ function checkPlayer(color){
       }, 2000);
     }
   }else{
-    $('h2').text('Wrong! Game Over');
+    $('h2').text('Wrong! Game Over!');
+    //accesibility
+    document.querySelector('h2[aria-label="wrong! game over!"]');
     //game resets
     playerPattern = [];
     computerPattern = [];
@@ -66,6 +71,9 @@ function checkPlayer(color){
     document.getElementById('begin').disabled = false;
     $('#begin').show();
     $('#begin').text('PLAY AGAIN');
+    //accessibility
+    let el = document.getElementById('begin');
+    el.ariaLabel = "play again";
     //restarts the game and opens the intro page for fresh start
     begin.addEventListener('click', function() {
       location.reload();
@@ -91,7 +99,7 @@ function nextSequence(){
 function playAudio(color){
   let audioPath = `assets/audio/${color}.mp3`;
   let audio = new Audio(audioPath);
-  audio.play()
+  audio.play();
 }
 
 //creates visual animation for clicked simon buttons
