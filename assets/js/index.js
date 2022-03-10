@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+/*globals $:false */
 //makes the intro html disappear on a click of 'CONTINUE' button
 let start = document.querySelector('.disappear');
 start.addEventListener('click', function(){
