@@ -57,6 +57,11 @@ h1 {
   .intro {
     font-size: smaller;
   }
+  .container {
+    grid-template-rows: 140px 140px;
+    grid-template-columns: 140px 140px;
+    grid-gap: 10px; 
+  }
 }
 
 @media only screen and (min-width: 500px) {
