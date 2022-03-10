@@ -12,26 +12,26 @@
   </head>
 
   <body>
-    <div class="intro">
+    <div aria-label="game rules" class="intro">
         <h1>SIMON SAYS</h1>
         <p>How long a sequence can you remember?</p>
         <p>Computer offers a new note to memorize as level goes up.</p>
         <p>The task is to replicate the previous level pattern and the newly added note.</p>
         <p>The previous pattern is not repeated when moved to the next level.</p>
-        <button class="button disappear">CONTINUE</button> 
+        <button aria-label="press continue" class="button disappear">CONTINUE</button> 
     </div>
     
-    <div class="instructions">
-        <div id="heading"></div>
-        <button id="begin">START GAME</button> 
-        <p class="level">Level: <span id="level">0</span></p>
+    <div aria-label="game status" class="instructions">
+        <div aria-label=""id="heading"></div>
+        <button aria-label="press to start game" id="begin">START GAME</button> 
+        <p aria-label="level identifier" class="level">Level: <span id="level">0</span></p>
     </div>
 
-    <div class="container">
-        <div id="green"  class="simon green"></div>
-        <div id="red"    class="simon red"></div>
-        <div id="yellow" class="simon yellow"></div>
-        <div id="blue"   class="simon blue"></div>
+    <div arial-label="four colored circles representing buttons" class="container">
+        <div aria-label="green button" id="green"  class="simon green"></div>
+        <div aria-label="red button"id="red"    class="simon red"></div>
+        <div aria-label="yellow button"id="yellow" class="simon yellow"></div>
+        <div aria-label="blue button"id="blue"   class="simon blue"></div>
     </div>
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
