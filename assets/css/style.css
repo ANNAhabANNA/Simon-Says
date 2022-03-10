@@ -49,13 +49,19 @@ body {
 }
 
 h1 {
-  margin-top: 3rem;
+  margin-top: 0.1rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .intro {
+    font-size: smaller;
+  }
 }
 
 /* game status info */
 .instructions {
-  margin-top: 2em;
+  margin-top: 0.5em;
   text-align: center;
 }
 

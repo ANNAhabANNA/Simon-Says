@@ -1,4 +1,3 @@
-
 //makes the intro html disappear on a click of 'CONTINUE' button
 let start = document.querySelector('.disappear');
 start.addEventListener('click', function(){
@@ -14,7 +13,7 @@ document.getElementById('heading').appendChild(newHeading);
 //changes game guidance text and makes start game button invisible
 let begin = document.querySelector('#begin');
 begin.addEventListener('click', function(){
-    $('h2').text('Repeat Now!');
+    $('h2').text('Repeat After Simon!');
     $('#begin').hide();
     setTimeout(nextSequence, 2000);
 });
