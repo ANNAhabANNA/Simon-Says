@@ -58,8 +58,8 @@ h1 {
     font-size: smaller;
   }
   .container {
-    grid-template-rows: 140px 140px;
-    grid-template-columns: 140px 140px;
+    grid-template-rows: 120px 120px;
+    grid-template-columns: 120px 120px;
     grid-gap: 10px; 
   }
 }
