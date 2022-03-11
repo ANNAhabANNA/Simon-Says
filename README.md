@@ -1,22 +1,24 @@
-![Screenshot](/assets/img/readme-img/ami.responsive.jpeg)
-<br />
 <div align="center">
   <h3 align="center">SIMON SAYS</h3>
   <p align="center">
-    Interactive Javascript Game 
+    INTERACTIVE JAVASCRIPT GAME
   <br />
     <a href="https://annahabanna.github.io/Simon-Says/">View Demo</a>
   <br />
   </p>
 </div>
+<br />
+
+![Screenshot](/assets/img/readme-img/ami.responsive.jpeg)
+
 
 ## About The Project
 
-The project idea was inspired by childhood memory game Simon Says. Simon was released by Milton-Bradley in 1978 with much fanfare, including a midnight release party at Studio 54, the elite disco in New York City. An instance success, the game reached its peak during the 1980s and continued to sell for decades thereafter [learn more](http://web.pdx.edu/~kherb2/project2-simon-game/#:~:text=Simon%20was%20released%20by%20Milton,to%20sell%20for%20decades%20thereafter)
+The project idea was inspired by childhood memory game Simon Says. Simon was released by Milton-Bradley in 1978 with much fanfare, including a midnight release party at Studio 54, the elite disco in New York City. An instance success, the game reached its peak during the 1980s and continued to sell for decades thereafter [learn more](https://en.wikipedia.org/wiki/Simon_Says)
 
-The aim of the game is to repeat a series of random computer clicks. After each round, the sequence becomes longer by one click which makes it harder to remember. 
+The aim of the game is to repeat series of random computer clicks. After each round, the sequence becomes longer by one click which makes it harder to remember. 
 
-Key project goal is to produce a simple memory game that can be used on all devices, stimulate memory and increase both auditory and visual attention.The target audience are users who consciously seek to improve attention, focus, concentration and musical hearing.
+Key project goal is to produce a simple memory game that can be used on all devices, stimulate memory and increase both auditory and visual attention. The target audience are users who consciously seek to improve attention, focus, concentration and musical hearing.
 
 <details>
   <summary>Table of Contents</summary>
@@ -41,8 +43,6 @@ The project was built using the following tools:
 * [JavaScript](https://www.javascript.com/)
 * [JQuery](https://jquery.com)
 
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
-
 
 
 ## UX and UI
@@ -55,19 +55,23 @@ The project was built using the following tools:
 
 3. To be able to easily navigate the different parts of the game 
 
-4  To be able to use all the interactive elements of the game
+4. To be able to use all the interactive elements of the game
 
  **Game Flow**
 
-The game flow schema was created using Figma. The game follows simple logic when user is required to navigate to the game start window and press the start game button. The game begins by computer activating a button with sound and animated press. The user then repeats what was 'played' by computer and the user input is then verified as being true or false. If the user input correctly replicates what computer 'played' a moment ago, the game then moves to the second level and computer activates another button. This time the user input has to include the previous input and the newly generated one. If the user makes a mistake the game is over and guidance is given to reset the game by returning to the window with game rules.
+The game flow schema was created using Figma and shows the simple logic of the game. The user is required to navigate from the game start window by pressing the continue button. On the next page the user is required to press the start game button. Then the game begins by computer activating a colored button with sound and animated press. The user is required to repeat what was 'played' by computer and the user input is then verified as being true or false. If the user input correctly replicates what computer 'played' a moment ago, the game then moves to the second level. Computer activates another colored button. This time the user input has to include the previous input and the newly generated button. If the user makes a mistake the game is over and instruction is given to reset the game by pressing the reset button that redirects to the game rules window.
 
 ![game flow](assets/img/readme-img/game-flow.jpeg)
 
 **Wireframe**
 
-The wireframes for the game was creted using Figma where each page was drawn separately for both desktop and mobile view. Tablet version of the website was designed to repeat the destopview.
+The wireframe for the game was created using Figma where each page was drawn separately for desktop and mobile view. Tablet version of the website was designed to repeat the desktop view.
 
-The directory containing the wireframe images can be found [here](assets/img/readme-img/game-wireframe.jpeg).
+<details> 
+  <summary> ** Game wireframe ** </summary>
+  <img src= "assets/img/readme-img/game-wireframe.jpeg">
+</details>
+
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
 
@@ -77,22 +81,19 @@ The directory containing the wireframe images can be found [here](assets/img/rea
 
 **Colors**
 
-![game colors](assets/img/readme-img/game-palette.jpeg)
-
-The game colors were chosen to compliment the four colors of Simon Says game, ie. red, blue, green and yellow.  As my game design is small-scale and compact, the two distinctively different background colors were picked to make game navigation memorabe and  easily ditinguishable for the user. The main accent color of Celadon Green (#1E847F) was picked for game rules window with additional accent color of Medium Turquoise (#4FD1C5) for the continue button style. The picked font color Dark Charcoal (#333) is well accessible with great contrast ratio against the chosen background colors.
+The game colors were chosen to compliment the four colors of Simon Says game, ie. red, blue, green and yellow.  As my game design is small-scale and compact, the two distinctively different background colors were picked to make game navigation memorabe and  easily ditinguishable for the user. The main accent color of Celadon Green (#1E847F) was picked for the game rules window with additional accent color of Medium Turquoise (#4FD1C5) for the continue button design. The chosen font color Dark Charcoal (#333) is well accessible with great contrast ratio against the chosen background colors.
     
 <details> 
-<summary> ** Game rules window palette ** </summary>
-![game colors](assets/img/readme-img/game-rules.jpeg)
+  <summary> ** Game rules window palette ** </summary>
+  <img src= "assets/img/readme-img/game-palette.jpeg">
 </details>
 
 The background color of the main game section is Peach Crayola (#ECC19C) which provides soft and subtle effect for the user eye. The four colors of Simon Says game act as accent colors and make it easier for user to focus while offering good accessibility rating against the chosen background color of Peach Crayola (#ECC19C). 
 
 <details> 
-<summary>** Color pallette continued **</summary>
-![game section colors](assets/img/readme-img/game-section.jpeg)
-![four simon colors](assets/img/readme-img/four-colors.jpeg)
-  
+  <summary>** Color pallette continued **</summary>
+  <img src= "assets/img/readme-img/game-section.jpeg">
+  <img src= "assets/img/readme-img/four-colors.jpeg">
 </details>
 
 **Fonts**
@@ -111,8 +112,8 @@ The game rules page is displayed first and contains instructions for user to rea
 The button template was borrowed at [www.codepen.io](https://codepen.io/mccombsc/pen/ZEzxWPy) and customized according to my project needs.
 
 <details> 
-<summary> ** Game rules** </summary>
-<img src="assets/img/readme-img/game-rules.jpeg" width="350" height="850"> 
+  <summary> ** Game rules** </summary>
+  <img src="assets/img/readme-img/game-rules.jpeg"> 
 </details>
 
 **Game Section**
@@ -120,8 +121,8 @@ The button template was borrowed at [www.codepen.io](https://codepen.io/mccombsc
 The game section visiually mimics the classic look of the game with four buttons colored in red, blue, yellow and green. The start button is placed on the top of the screen allowing the user to control the star of the game. Level indicator is set to 0 and located in the middle between the start button and the grid of four colored buttons.
 
 <details> 
-<summary> ** Game section ** </summary>
-![game section](assets/img/readme-img/game-section.jpeg)
+  <summary> ** Game section ** </summary>
+  <img src= "assets/img/readme-img/game-section.jpeg">
 </details>
 
 **Playing Game**
@@ -129,8 +130,8 @@ The game section visiually mimics the classic look of the game with four buttons
 Game starts after the user clicks the start button which gets replaced by text message notifying the user to start repeating after Simon. The level indicator changes to level one. The turn is then passed to the user who has to repeat what Simon 'played' a moment ago. If the user clicks the required button, the game then moves to the next level. Starting from level two Simon continues to 'play' one button, however the user has to first produce level one button and then add the current level button. The game becomes more difficult with each level as more colors have to be memorized.
 
 <details> 
-<summary> ** Playing game ** </summary>
-![playing game](assets/img/readme-img/playing-game.jpeg)
+  <summary> ** Playing game ** </summary>
+  <img src= "assets/img/readme-img/playing-game.jpeg">
 </details>
 
 **Game Over**
@@ -138,8 +139,8 @@ Game starts after the user clicks the start button which gets replaced by text m
 The game is finished when user clicks the wrong color button. The user is then notified that game is over and reset button appears for user navigation back to the game rules  page.
 
 <details> 
-<summary> ** Game over ** </summary>
-![game over](assets/img/readme-img/game-over.jpeg)
+  <summary> ** Game over ** </summary>
+  <img src= "assets/img/readme-img/game-over.jpeg">
 </details>
 
 **Future Features**
@@ -174,29 +175,25 @@ Continuous testing was run using Lighthouse within Google Chrome to verify perfo
 Javascript code was tested by using JShint Validator and no error or warnings were detected.
 
 <details> 
-<summary> ** Lighthouse testing result ** </summary>
-
-![lighthouse testing for game rules window](assets/img/readme-img/lighthouse-front.jpeg)
-![Lighthouse testing for game section window](assets/img/readme-img/lighthouse-back.jpeg)
+  <summary> ** Lighthouse testing result ** </summary>
+  <img src= "assets/img/readme-img/lighthouse-front.jpeg">
+  <img src= "assets/img/readme-img/lighthouse-back.jpeg">
 </details>
 
 
 <details> 
-<summary> ** HTML validator result ** </summary>
-
-![CSS validator result](assets/img/readme-img/html-validator.jpeg)
+  <summary> ** HTML validator result ** </summary>
+  <img src= "assets/img/readme-img/html-validator.jpeg">
 </details>
 
 <details> 
-<summary> ** CSS validator result ** </summary>
-
-![CSS validator result](assets/img/readme-img/css-validator.jpeg)
+  <summary> ** CSS validator result ** </summary>
+  <img src= "assets/img/readme-img/css-validator.jpeg">
 </details>
 
 <details> 
-<summary> ** JShint validator result ** </summary>
-
-![Lighthouse testing](assets/img/readme-img/jshint-validator.jpeg)
+  <summary> ** JShint validator result ** </summary>
+  <img src= "assets/img/readme-img/jshint-validator.jpeg">
 </details>
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
@@ -231,12 +228,6 @@ The game was tested manually across a range of devices to ensure all links and s
   ```   <link rel="shortcut icon" href="assets/img/favicon"> ```
 * HTML validator identified an error with aria-label for divs. This was solved by applying aria-labelledby instead.
 
-<details> 
-<summary> ** Bugs ** </summary>
-
-![Bugs](assets/img/readme-img/bug.jpeg)
-</details>
-
 ## Credits
 
 **Frameworks, Libraries and Tools**
@@ -263,20 +254,14 @@ The game was tested manually across a range of devices to ensure all links and s
 
 The following Youtube tutorials were used to assist my learning of game logic and coding solutions:
 
-*[Recreating childhood: Simon Game](https://www.youtube.com/watch?v=ahGDFFAgKII)
-*[Simon Game JavaScript Tutorial for Beginners](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2051s)
-*[JavaScript Workshop: Simon Game](https://www.youtube.com/watch?v=FEL8gKaIm1Y)
-*[Live Coding a Simon Game: HTML, CSS, Javascript](https://www.youtube.com/watch?v=W0MxUHlZo6U)
+* [Recreating childhood: Simon Game](https://www.youtube.com/watch?v=ahGDFFAgKII)
+* [Simon Game JavaScript Tutorial for Beginners](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2051s)
+* [JavaScript Workshop: Simon Game](https://www.youtube.com/watch?v=FEL8gKaIm1Y)
+* [Live Coding a Simon Game: HTML, CSS, Javascript](https://www.youtube.com/watch?v=W0MxUHlZo6U)
 
 **Acknoweledgment**
 
  * My Mentor Chris Quinn.
  * Code Institute team and community.
-
-<p align="right">(<a href="#about-the-project">back to top</a>)</p>
-
-**Contact**
-
-Your Name  - akozorkova@gmail.com
 
 <p align="right">(<a href="#about-the-project">back to top</a>)</p>
