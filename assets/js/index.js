@@ -13,7 +13,9 @@ document.getElementById('heading').appendChild(newHeading);
 
 //creates click event listener to activate game after 2000msec delay
 let begin = document.querySelector('#begin');
+$(".container").css("pointer-events","none");
 begin.addEventListener('click', function(){
+  $(".container").css("pointer-events","auto");
   //changes game guidance text and makes start game button invisible
   $('h2').text('Repeat After Simon!');
   //accessibility
@@ -59,6 +61,7 @@ function checkPlayer(color){
       }, 2000);
     }
   }else{
+    $(".container").css("pointer-events","none");
     $('h2').text('Wrong! Game Over!');
     //accesibility
     document.querySelector('h2[aria-label="wrong! game over!"]');
